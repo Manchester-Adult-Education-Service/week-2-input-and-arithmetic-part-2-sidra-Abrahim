@@ -41,7 +41,9 @@ print("-------------------------------------------\n"
 # 3. Print: "Hello [name]! You said you are [age_text] years old."
 
 # Write your code below:
-
+name = input("Please Enter your name!\n")
+age_text = input("Please Enter you age!\n")
+print(f"\nHello {name}! You said you are {age_text} years old.")
 
 # -------------------------------------------
 # Task 2: Data Types and Conversion
@@ -66,7 +68,8 @@ print("\n-------------------------------------------\n"
 #    Hint: Use {age + 1} inside your f-string.
 
 # Write your code below:
-
+age = int(age_text)
+print(f"You will be {age+1} next year!")
 
 # -------------------------------------------
 # Task 3: Customising the Experience
@@ -89,6 +92,12 @@ print("\n-------------------------------------------\n"
 # 3. Use .capitalize() on the food and song variables.
 
 # Write your code below:
+
+fav_food = input("What is your favourite food?\n")
+fav_song = input("What is your favourite sogn?\n")
+print(f"\nHi {name}! Your favourite food is {fav_food.capitalize()} and your favourite song is {fav_song.capitalize()}")
+
+
 
 
 # -------------------------------------------
@@ -124,7 +133,9 @@ print("\n-------------------------------------------\n"
 # Print: "You are at least [X] months old!"
 
 # Write your code below:
-
+age_in_years = int(input("What is your age\n"))
+age_in_months = age_in_years * 12
+print(f"You are at least {age_in_months} months old!")
 
 # Extension 2: Name Lengths
 # -------------------------------------------
@@ -138,6 +149,9 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+fav_city = input("Which is your favourite city?\n")
+num_letters = len(fav_city)
+print(f"\n{fav_city} has {num_letters} letters in its name")
 
 # Extension 3: The Area Calculator
 # -------------------------------------------
@@ -151,7 +165,11 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+width_rectangle = int(input("What is the width of the rectangle?\n"))
+height_rectangle = int(input("What is the height of the rectangle?\n"))
+area_rectangle = width_rectangle * height_rectangle
 
+print(f"Area = {area_rectangle}")
 # -------------------------------------------
 # SAVE YOUR EXTENSIONS
 # -------------------------------------------
@@ -180,7 +198,19 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+total_cost = int(input("What is the total cost of the bill?\n"))
+num_of_people = int(input("How many people will share the cost of the bill?\n"))
+tip = int(input("What percentage of tip you want to leave?\n"))
+tip = tip/100
+#print(f"TIP IS {tip}")
 
+tip = total_cost * tip
+#print(f"TIP IS  {tip}")
+
+total_cost = total_cost + tip
+cost_per_person = total_cost/num_of_people
+
+print(f"COST PER PERSON = {cost_per_person}")
 # -------------------------------------------
 # FINAL SUBMISSION
 # -------------------------------------------
