@@ -198,7 +198,19 @@ print("\n-------------------------------------------\n"
 
 # Write your code below:
 
+total_cost = int(input("What is the total cost of the bill?\n"))
+num_of_people = int(input("How many people will share the cost of the bill?\n"))
+tip = int(input("What percentage of tip you want to leave?\n"))
+tip = tip/100
+#print(f"TIP IS {tip}")
 
+tip = total_cost * tip
+#print(f"TIP IS  {tip}")
+
+total_cost = total_cost + tip
+cost_per_person = total_cost/num_of_people
+
+print(f"COST PER PERSON = {cost_per_person}")
 # -------------------------------------------
 # FINAL SUBMISSION
 # -------------------------------------------
