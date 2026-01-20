@@ -41,7 +41,9 @@ print("-------------------------------------------\n"
 # 3. Print: "Hello [name]! You said you are [age_text] years old."
 
 # Write your code below:
-
+name = input("Please Enter your name!\n")
+age_text = input("Please Enter you age!\n")
+print(f"\nHello {name}! You said you are {age_text} years old.")
 
 # -------------------------------------------
 # Task 2: Data Types and Conversion
@@ -66,7 +68,8 @@ print("\n-------------------------------------------\n"
 #    Hint: Use {age + 1} inside your f-string.
 
 # Write your code below:
-
+age = int(age_text)
+print(f"You will be {age+1} next year!")
 
 # -------------------------------------------
 # Task 3: Customising the Experience
@@ -89,6 +92,12 @@ print("\n-------------------------------------------\n"
 # 3. Use .capitalize() on the food and song variables.
 
 # Write your code below:
+
+fav_food = input("What is your favourite food?\n")
+fav_song = input("What is your favourite sogn?\n")
+print(f"\nHi {name}! Your favourite food is {fav_food.capitalize()} and your favourite song is {fav_song.capitalize()}")
+
+
 
 
 # -------------------------------------------
